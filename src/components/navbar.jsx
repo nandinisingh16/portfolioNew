@@ -111,13 +111,7 @@ class Navbar extends React.Component {
                 <Link className="nav-link" to="/kaggle">Kaggle</Link>
               </li>
               <li className="nav-item">
-                <a 
-                  className="nav-link" 
-                  href="#projects" 
-                  onClick={this.handleScrollToSection('projects')}
-                >
-                  Projects
-                </a>
+                <Link className="nav-link" to="/portfolio">Projects</Link>
               </li>
             </ul>
           </div>
