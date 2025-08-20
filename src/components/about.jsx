@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-hero-text">
           <h1>Raj Nandini Singh</h1>
           <p>Click here to download my CV and check out my portfolio to see my work.</p>
-          <a href="http://digil.ink/l/1810H4aaVa" className="hero-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1bzaXXd1dCRL0ZAf6MGugdnSGjmeMbKcp/view?usp=sharing" className="hero-btn" target="_blank" rel="noopener noreferrer">
             📄 Download CV
           </a>
           <a href="/portfolio" className="hero-btn" target="_blank" rel="noopener noreferrer">
