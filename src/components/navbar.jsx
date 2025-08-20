@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import logo1 from "../assets/img/img1.png";
 import logo2 from "../assets/img/img1.png";
 
-
-
 class Navbar extends React.Component {
   constructor() {
     super();
@@ -47,17 +45,41 @@ class Navbar extends React.Component {
     });
   }
 
+  handleScrollToSection = (sectionId) => {
+    return (e) => {
+      e.preventDefault();
+      
+      // Close mobile menu if open
+      $(".navbar-collapse").collapse("hide");
+      
+      // Scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Fallback: navigate to home and then scroll
+        window.location.href = '/';
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    };
+  };
+
   render() {
     return (
       <nav
         className="navbar navbar-b navbar-trans navbar-expand-md"
         id="mainNav"
-        style={{ backgroundColor: "#343a40" }} // dark gray, change as needed
+        style={{ backgroundColor: "#343a40" }}
       >
         <div className="container">
-          <a className="navbar-brand js-scroll" href="https://portfolio-new-gamma-eight.vercel.app/portfolio">
+          <Link className="navbar-brand" to="/">
             Raj Nandini Singh
-          </a>
+          </Link>
           <button
             className="navbar-toggler collapsed"
             type="button"
@@ -79,20 +101,23 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </li>
-           {/*   <li className="nav-item">
-              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/portfolio">Portfolio</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/papers">Papers</Link>
               </li>
-              
               <li className="nav-item">
                 <Link className="nav-link" to="/kaggle">Kaggle</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="/portfolio#projects">Projects</a>
+                <a 
+                  className="nav-link" 
+                  href="#projects" 
+                  onClick={this.handleScrollToSection('projects')}
+                >
+                  Projects
+                </a>
               </li>
             </ul>
           </div>
