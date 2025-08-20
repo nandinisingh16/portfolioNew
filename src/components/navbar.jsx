@@ -55,7 +55,7 @@ class Navbar extends React.Component {
         style={{ backgroundColor: "#343a40" }} // dark gray, change as needed
       >
         <div className="container">
-          <a className="navbar-brand js-scroll" href="/portfolio">
+          <a className="navbar-brand js-scroll" href="https://portfolio-new-gamma-eight.vercel.app/portfolio">
             Raj Nandini Singh
           </a>
           <button
