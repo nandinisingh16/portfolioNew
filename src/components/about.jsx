@@ -10,12 +10,9 @@ const About = () => {
         <img src={profileImage} alt="Raj Nandini Singh" className="about-hero-image" />
         <div className="about-hero-text">
           <h1>Raj Nandini Singh</h1>
-          <p>Click here to download my CV and check out my portfolio to see my work.</p>
+          <p>Click here to download my CV and check out my portfolio.</p>
           <a href="https://drive.google.com/file/d/1bzaXXd1dCRL0ZAf6MGugdnSGjmeMbKcp/view?usp=sharing" className="hero-btn" target="_blank" rel="noopener noreferrer">
             Download CV
-          </a>
-          <a href="/portfolio" className="hero-btn" target="_blank" rel="noopener noreferrer">
-            Portfolio
           </a>
         </div>
       </div>
