@@ -294,6 +294,7 @@ h3 {
 .nav-btn:hover {
   background: #1a6ba3;
   transform: translateY(-2px);
+  color:white;    
 }
 
 .project-count {
@@ -903,5 +904,144 @@ footer {
   }
   .future-section h2 {
     font-size: 1.6rem;
+  }
+}
+
+/* ===== Responsive Navigation ===== */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    min-height: 56px;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+  }
+  .nav-link {
+    display: block;
+    padding: 12px 16px;
+    font-size: 1.1rem;
+  }
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background: #2980b9;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  .navbar-menu.active {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #f8ece1;
+    cursor: pointer;
+    z-index: 100;
+  }
+}
+
+/* Hide hamburger by default, show on mobile */
+.navbar-toggle {
+  display: none;
+}
+
+/* ===== Responsive Section Padding & Font ===== */
+@media (max-width: 768px) {
+  section,
+  .about-section,
+  .skills-section,
+  .project-grid,
+  .about-content,
+  .future-section {
+    padding: 24px 4%;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .cover {
+    width: 100%;
+    max-width: 220px;
+  }
+  .skills-section {
+    margin: 24px auto;
+  }
+  .project-grid {
+    padding: 20px 4%;
+    margin: 1.5rem auto;
+  }
+  .card-img {
+    width: 100%;
+    max-width: 320px;
+    height: 160px;
+  }
+}
+
+/* ===== Ensure Images and Containers are Fluid ===== */
+img,
+.cover,
+.card-img,
+.about-hero-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Fix Timeline on Mobile ===== */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+  .timeline-container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline-container.left,
+  .timeline-container.right {
+    left: 0;
+  }
+  .timeline-dot {
+    left: -8px;
+  }
+}
+
+/* ===== Responsive Blog & Kaggle Section ===== */
+@media (max-width: 768px) {
+  .blog-section,
+  .kaggle-section {
+    padding: 40px 2%;
+  }
+  .blog-section li,
+  .kaggle-section li {
+    padding: 12px 8px;
+  }
+}
+
+/* ===== Responsive Footer ===== */
+@media (max-width: 768px) {
+  footer {
+    padding: 12px 2%;
+    font-size: 0.8rem;
   }
 }
