@@ -9,7 +9,8 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      logo: logo1
+      logo: logo1,
+      menuOpen: false
     };
   }
 
@@ -34,16 +35,14 @@ class Navbar extends React.Component {
       }
     });
 
-    $(".navbar-toggler").on("click", function() {
-      if (!$("#mainNav").hasClass("navbar-reduce")) {
-        $("#mainNav").addClass("navbar-reduce");
-      }
-    });
-
     $(".js-scroll").on("click", function() {
       $(".navbar-collapse").collapse("hide");
     });
   }
+
+  toggleMenu = () => {
+    this.setState({ menuOpen: !this.state.menuOpen });
+  };
 
   handleScrollToSection = (sectionId) => {
     return (e) => {
@@ -81,12 +80,11 @@ class Navbar extends React.Component {
             Raj Nandini Singh
           </Link>
           <button
-            className="navbar-toggler collapsed"
+            className={`navbar-toggler ${this.state.menuOpen ? '' : 'collapsed'}`}
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
+            onClick={this.toggleMenu}
             aria-controls="navbarDefault"
-            aria-expanded="false"
+            aria-expanded={this.state.menuOpen}
             aria-label="Toggle navigation"
           >
             <span></span>
@@ -94,13 +92,14 @@ class Navbar extends React.Component {
             <span></span>
           </button>
           <div
-            className="navbar-collapse collapse justify-content-end"
+            className={`navbar-collapse ${this.state.menuOpen ? 'show' : 'collapse'} justify-content-end`}
             id="navbarDefault"
           >
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </li>
+              <li className="nav-item"><Link className="nav-link" to="/project">Project</Link></li>
               <li className="nav-item">
                 <Link className="nav-link" to="/portfolio">Portfolio</Link>
               </li>
@@ -110,9 +109,7 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/kaggle">Kaggle</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">Projects</Link>
-              </li>
+              
             </ul>
           </div>
         </div>

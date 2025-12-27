@@ -28,7 +28,7 @@ const Kaggle = () => {
           <div className="col-sm-12">
             <h4> Kaggle Stats</h4>
             <p>
-              I actively explore competitions, datasets, and notebooks. While not focused on rankings, here’s a snapshot of where I’ve engaged:
+              I actively explore competitions, datasets, and notebooks. Focused on learning, experimentation, and reproducing strong baseline solutions, here’s a snapshot of where I’ve engaged:
             </p>
             <ul>
               <li> Competitions: Beginner-level entries with active learning focus</li>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../src/style.css";
+import "../style.css";
 import profileImage from "../assets/img/aboutimg.png";
 
 const About = () => {
@@ -9,10 +9,10 @@ const About = () => {
       <div className="about-hero">
         <img src={profileImage} alt="Raj Nandini Singh" className="about-hero-image" />
         <div className="about-hero-text">
-          <h1>Raj Nandini Singh</h1>
-          <p>Click here to download my CV and check out my portfolio.</p>
-          <a href="https://drive.google.com/file/d/1bzaXXd1dCRL0ZAf6MGugdnSGjmeMbKcp/view?usp=sharing" className="hero-btn" target="_blank" rel="noopener noreferrer">
-            Download CV
+          <h1>RAJ NANDINI SINGH</h1>
+          <h2 className="aboutme">Data Science | Machine Learning  | AI Research</h2>
+          <a href="https://drive.google.com/file/d/1Kszv1FiCimoXJ2w68vyKbElQoX9TUkaX/view?usp=sharing" className="hero-btn" target="_blank" rel="noopener noreferrer">
+            Download Resume
           </a>
         </div>
       </div>
@@ -29,13 +29,8 @@ const About = () => {
       marginBottom: "15px",
     }}
   >
-    I’m <strong style={{ color: "#222" }}>Raj Nandini Singh</strong>, an aspiring{" "}
-    <span style={{ color: "#444", fontWeight: "600" }}>AI/ML engineer</span> with a strong
-    foundation in C, C++, Python, and Data Structures & Algorithms. My focus lies in applying{" "}
-    <span style={{ color: "#555", fontStyle: "italic" }}>Deep Learning, NLP, Generative AI,</span>{" "}
-    and <span style={{ color: "#555", fontStyle: "italic" }}>Computer Vision</span> to solve real-world problems, 
-    with projects such as Human Activity Recognition, SpendVision, and Image Generation using Conditional GAN.
-  </p>
+    I’m <strong style={{ color: "#222" }}>Raj Nandini Singh</strong>, a final-year Computer Science student at Amity University (AI minor) aspiring Data Scientist, focused on extracting insights from data and building predictive models that drive business decisions. My strengths lie in EDA, feature engineering, statistical analysis, and applied machine learning across NLP and computer vision use cases.
+    </p>
 
   <p
     style={{
@@ -44,15 +39,8 @@ const About = () => {
       color: "#333",
       marginBottom: "15px",
     }}
-  >
-    I enjoy exploring the frontier of{" "}
-    <span style={{ fontWeight: "600", color: "#444" }}>
-      machine learning, AI research, and practical applications
-    </span>
-    , and I’m continuously building projects that connect innovation with impact—from intelligent
-    web applications to research-driven ML solutions. My goal is to grow into a role where I can
-    design and deploy scalable AI systems that create meaningful value.
-  </p>
+  >Recently, I’ve worked on  <strong style={{ color: "#222" }}>agentic AI pipelines for automated data preprocessing, production-grade sentiment analysis systems</strong>, and  <strong style={{ color: "#222" }}>real-time human activity recognition models</strong> using deep learning. I enjoy working at the intersection of modeling, evaluation, and deployment—where ideas meet reality.
+    </p>
 
   <p
     style={{
@@ -61,11 +49,8 @@ const About = () => {
       color: "#333",
       marginBottom: "15px",
     }}
-  >
-    Recent work: <strong style={{ color: "#444" }}>Human Activity Recognition</strong> (Deep Learning, 
-    video inference), <strong style={{ color: "#444" }}>sportX</strong> — a platform for sports enthusiasts, 
-    and <strong style={{ color: "#444" }}>SpendVision AI</strong> — a voice-powered smart expense tracker.
-  </p>
+  >As a  <strong style={{ color: "#222" }}>Generative AI Intern at PhotoGPT</strong>, I designed prompt strategies that improved theme consistency by 15% and built automated evaluation pipelines that reduced manual review effort by 30%. I’ve also contributed as a  <strong style={{ color: "#222" }}>Frontend Intern at Evephoria</strong>, optimizing React-based interfaces to cut page load time by 20% and boost user engagement.
+      </p>
 
   <p
     style={{
@@ -73,9 +58,8 @@ const About = () => {
       fontSize: "1rem",
       color: "#333",
     }}
-  >
-    Outside tech: I play hockey, mentor juniors, join hackathons, and explore new tech.
-  </p>
+  >Outside of tech, I’m the  <strong style={{ color: "#222" }}> Hockey Team Captain</strong> and <strong style={{ color: "#222" }}>Creative Head of the IoT Alliance Club</strong>, leading teams, organizing tech events, and competing at a championship level. I’m currently seeking <strong style={{ color: "#222" }}>Data Scientist / ML Engineer</strong> roles where I can build scalable, impact-driven AI systems.
+    </p>
 </div>
 
 
@@ -96,20 +80,20 @@ const About = () => {
         <div className="about-block">
           <h2>Contact</h2>
           <p>
-            Want to chat? <a href="mailto:nandinisingh1622@gmail.com">Email me</a>.
+            Want to chat? <a href="mailto:nandinisingh1622@gmail.com">Email me</a> | Phone: 770-597-9461 | Noida, India
           </p>
           <p className="contact">Connect on social platforms —</p>
-          <a href="https://www.linkedin.com/in/raj-nandini-singh-618828250" className="hero-btns" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/raj-nandini2216" className="hero-btns" target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </a>
-          <a href="https://leetcode.com/u/Raj03Nandini2216/" className="hero-btns" target="_blank" rel="noopener noreferrer">
-            Leetcode
           </a>
           <a href="https://github.com/nandinisingh16" className="hero-btns" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <a href="https://www.kaggle.com/rajnandinisingh2216" className="hero-btns" target="_blank" rel="noopener noreferrer">
             Kaggle
+          </a>
+          <a href="https://portfolio-new-gamma-eight.vercel.app/" className="hero-btns" target="_blank" rel="noopener noreferrer">
+            Portfolio
           </a>
         </div>
       </div>

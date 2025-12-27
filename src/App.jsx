@@ -13,10 +13,12 @@ import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'lightbox2/dist/js/lightbox.min.js';
+import './mobile.css';
 
 //import components
 import Navbar from './components/navbar.jsx';
 import About from './components/about.jsx';
+import Project from './components/project.jsx';
 import Portfolio from './components/portfolio.jsx';
 import Preloader from './components/preloader';
 import Blog from './components/blog.jsx'; 
@@ -45,6 +47,7 @@ function App() {
         <Route path="/" element={
           <>
             <About />
+            <Project />
             <Portfolio />
             <Papers />
             <Kaggle />
@@ -53,6 +56,7 @@ function App() {
           </>
         } />
         <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/papers" element={<Papers />} />
         <Route path="/kaggle" element={<Kaggle />} />
